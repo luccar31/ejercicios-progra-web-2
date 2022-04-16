@@ -1,9 +1,3 @@
-<?php
-
-    require_once('./ejercicios-progra-web-2/ejercicio-1/semaforo.php');
-    require_once('./ejercicios-progra-web-2/ejercicio-2/binomio-cuadrado-perfecto.php');
-?>
-
 <!doctype html>
 <html lang="es">
     <head>
@@ -19,30 +13,26 @@
             <section>
                 <article>
                     <h1>Ejercicio 1: Semáforo</h1>
-                    <form method="POST" id="ejercicio1">
+                    <form method="POST" action="./ejercicios-progra-web-2/ejercicio-1/resolucion-ej1.php" id="ejercicio1">
                         <input type="text" name="color" placeholder="Ingrese color del semáforo">
                         <button type="submit" form="ejercicio1">Enviar</button>
                     </form>
-                    <?php
-                        $color = !isset($_POST['color']) ? false : $_POST['color'];
-                    ?>
-                    <h3>Resultado 1: <?= $color ? semaforo_1($color) : "Esperando input..." ?></h3>
-                    <h3>Resultado 2: <?= $color ? semaforo_2($color) : "Esperando input..." ?></h3>
-                    <h3>Resultado 3: <?= $color ? semaforo_3($color) : "Esperando input..." ?></h3>
                 </article>
                 <article>
                     <h1>Ejercicio 2: Binomio cuadrado perfecto</h1>
-                    <form method="POST" id="ejercicio2">
-                        <input type="number" placeholder="Ingrese primer termino del binomio" name="a">
-                        <input type="number" placeholder="Ingrese segundo termino del binomio" name="b">
+                    <form method="POST" action="./ejercicios-progra-web-2/ejercicio-2/resolucion-ej2.php" id="ejercicio2">
+                        <input type="number" placeholder="Ingrese primer termino del binomio" name="a" step="any">
+                        <input type="number" placeholder="Ingrese segundo termino del binomio" name="b" step="any">
                         <button type="submit" form="ejercicio2">Calcular</button>
                     </form>
-                    <?php
-                        $a = !isset($_POST['$a']) ? false : $_POST['$a'];
-                        $b = !isset($_POST['$b']) ? false : $_POST['$b'];
-                    ?>
-                    <h3>Resultado 1: <?= $a && $b ? binomioCuadradoPerfecto_a($a, $b) : "Esperando input..." ?></h3>
-                    <h3>Resultado 2: <?= $a && $b ? binomioCuadradoPerfecto_b($a, $b) : "Esperando input..." ?></h3>
+                </article>
+                <article>
+                    <h1>Ejercicio 3: Concatenación de strings</h1>
+                    <form method="POST" action="./ejercicios-progra-web-2/ejercicio-3/resolucion-ej3.php" id="ejercicio3">
+                        <input type="text" placeholder="Ingrese primer string" name="texto1">
+                        <input type="text" placeholder="Ingrese segundo string" name="texto2">
+                        <button type="submit" form="ejercicio3">Concatenar</button>
+                    </form>
                 </article>
             </section>
         </main>
