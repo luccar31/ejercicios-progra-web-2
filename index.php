@@ -34,6 +34,13 @@
                         <button type="submit" form="ejercicio3">Concatenar</button>
                     </form>
                 </article>
+                <article>
+                    <h1>Ejercicio 4: Incrementar</h1>
+                    <form method="POST" action="./ejercicios-progra-web-2/ejercicio-4/resolucion-ej4.php" id="ejercicio4">
+                        <input type="number" placeholder="Ingrese num" name="num" step="any">
+                        <button type="submit" form="ejercicio4">Incrementar</button>
+                    </form>
+                </article>
             </section>
         </main>
         <footer></footer>
